@@ -1,0 +1,128 @@
+.page-header {
+  background-color: $primary-white-color;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Main nav */
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo */
+
+.header-studio {
+  color: $tertiary-text-color;
+}
+
+.logo {
+  display: flex;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  color: $accent-color;
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+/* Menu nav */
+
+.menu-nav .menu-nav {
+  display: flex;
+  align-items: center;
+  > .item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .link {
+    position: relative;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $title-text-color;
+
+    transition: color $animation-duration $timing-function;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+    &.current {
+      color: $accent-color;
+    }
+  }
+}
+
+.link.current::after {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: $accent-color;
+  border-radius: 2px;
+}
+
+.menu-nav,
+.contacts-nav {
+  .link {
+    font-style: medium;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+  }
+}
+
+/* Contacts nav */
+
+.contacts-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  .link {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    fill: $primary-text-color;
+    color: $primary-text-color;
+  }
+  .item + .item {
+    margin-left: 50px;
+  }
+}
+
+.contacts-icon {
+  margin-right: 10px;
+
+  transition: color $animation-duration $timing-function;
+}
+
+.contacts-nav .link {
+  &:hover,
+  &:focus,
+  &:hover .contacts-icon,
+  &:focus .contacts-icon {
+    color: $accent-color;
+    fill: $accent-color;
+  }
+}
+
+.page-header {
+  &.portfolio {
+    border-bottom: $page-header-portfolio-border;
+  }
+}
