@@ -1,0 +1,122 @@
+/* Footer */
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $tertiary-background-color;
+  .container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .section-title {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primary-white-color;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+}
+
+.logo {
+  &.logo-footer {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+
+.footer-studio {
+  color: $primary-white-color;
+}
+
+.address {
+  margin-bottom: 9px;
+  color: $primary-white-color;
+  font-style: normal;
+}
+
+.contacts {
+  color: $secondary-text-color;
+  text-decoration: none;
+
+  transition: color $animation-duration $timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  li:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+/* Footer social lists */
+
+.footer-list {
+  display: flex;
+  align-items: right;
+  > li {
+    width: 44px;
+    height: 44px;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.footer-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+
+  fill: $primary-white-color;
+  color: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+
+  text-decoration: none;
+
+  transition: background-color $animation-duration $timing-function;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.footer-input {
+  display: block;
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: transparent;
+  margin-right: 12px;
+  padding-left: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button {
+  &.footer-btn {
+    padding: 10px 29px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.send-icon {
+  fill: $primary-white-color;
+  margin-left: 10px;
+}
+
+.js-speaker-form {
+  display: flex;
+  align-items: center;
+}
