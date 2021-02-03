@@ -26,6 +26,12 @@
   }
 }
 
+.projects {
+  > img {
+    width: 100%;
+  }
+}
+
 .photo-overlay {
   position: relative;
   overflow: hidden;
