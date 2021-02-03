@@ -393,10 +393,6 @@ img {
   border: 1px solid #2196f3;
 }
 
-.portfolio-section {
-  padding-top: 175px;
-}
-
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -406,6 +402,7 @@ img {
 .projects > .item {
   width: 370px;
   margin: 15px;
+  border: 1px solid #eee;
 }
 
 .projects-link {
@@ -452,8 +449,6 @@ img {
 
 .projects-item-descript {
   padding: 20px 24px;
-  border: 1px solid #eee;
-  border-top: none;
 }
 
 .projects-title {
@@ -684,6 +679,10 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+}
+
+.portfolio-section {
+  padding-top: 175px;
 }
 
 /* Footer */
